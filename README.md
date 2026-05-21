@@ -4,7 +4,7 @@ A simple command-line tool to download comics from supported websites and save t
 
 ## Supported Websites
 - e-hentai.org
-- readcomiconline.li
+- rcostation.xyz
 
 ## Prerequisites
 

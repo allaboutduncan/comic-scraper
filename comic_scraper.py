@@ -491,7 +491,7 @@ def detect_url_type(url: str) -> str:
     url_lower = url.lower()
     if 'e-hentai.org' in url_lower or 'exhentai.org' in url_lower:
         return 'ehentai'
-    elif 'readcomiconline' in url_lower:
+    elif 'rcostation.xyz' in url_lower:
         return 'readcomiconline'
     else:
         return 'unknown'
@@ -515,7 +515,7 @@ def process_url(url: str):
             scrape_readcomiconline(url)
         else:
             logger.error(f"Unsupported URL: {url}")
-            logger.error("Supported sites: e-hentai.org, readcomiconline.li")
+            logger.error("Supported sites: e-hentai.org, rcostation.xyz")
     except Exception as e:
         logger.error(f"Failed to process {url}: {e}")
 
@@ -539,7 +539,7 @@ def main():
     """Main entry point"""
     print("="*60)
     print("Comic Scraper CLI")
-    print("Supports: e-hentai.org, readcomiconline.li")
+    print("Supports: e-hentai.org, rcostation.xyz")
     print("="*60)
     print()
 
